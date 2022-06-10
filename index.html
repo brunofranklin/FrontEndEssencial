@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS\styles.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <script src="JS\darkMode.js" defer></script>
+    <script src="JS\user.js" defer></script>
+    <link rel="icon" href="assets\favicon-carrotech.png" type="image/png">
+    <title>Carrotech|Home</title>
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets\logo.png" alt="Logo Carrotech" class="logo-header"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon" id="btn-expande"><img class="icon-nav-toggler"src="assets\nav-toggler-icon.png" alt="Botão de abrir menu" srcset=""></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link textHeader" href="index.html"><span class="textNav text-black">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textHeader" href="sobre.html"><span class="textNav">Sobre</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textHeader textFale" href="faleconosco.html"><span class="textNav">Fale Conosco</span></a>
+                    </li>                  
+                    </ul>
+                    <div>
+                        <button onclick="darkMode()" class="btn-darkMode btn-dark btn-sm"><img src="assets\darkmode-icon.png" alt="Botão de ativar darkMode" class="icon-dark"></button>
+                    </div>
+                    <div>
+                      <text id="txtUser" class="text-black font-weight-bold"></text>
+                    </div>
+                    <div>
+                        <a class="nav-link textLogin" href="login.html"><img src="assets\login-icon.png" alt="Ícone de login"> <text id="txtLogin"></text>
+                        </a>
+                    </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+  
+    <main class="container shadow-lg pb-5" id="main">
+        <div class="row justify-content-center">
+        <h3 class="col-8 offset-1 mb-3 mt-3">VEJA AS NOVIDADES DO MUNDO AUTOMOTIVO</h3>
+        </div>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets\Mts1.jpg" class="d-block w-100" alt="Carro, mitsubishi outlander ">
+                <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-black">
+                  <h5>Mitsubishi Pajero Outlander 2022</h5>
+                  <p>Se o seu dia a dia precisa muito espaço e segurança para cumprir todas as tarefas, o Outlander é o carro perfeito pra você.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets\NissanZ.jpg" class="d-block w-100" alt="Carro, Novo Nissan Z">
+                <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-black">
+                  <h5>Nissan Z Proto 2022</h5>
+                  <p>O Nissan Z 2022 supostamente terá um preço inicial de US$ 34.995, o que o tornaria muito mais atingível do que o GR Supra 2.0 (US$ 42.990).</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets\Tesla1.jpg" class="d-block w-100" alt="Carro, Tesla Model S">
+                <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-black">
+                  <h5>Tesla Model S 2022</h5>
+                  <p>Novos Tesla Model S e X 2022 ganham volante ‘de avião’.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev buttonSlide" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next buttonSlide" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+            <br>
+
+            <h2>Videos Recomendados</h2>
+            <div class="container mt-4">
+                <div class="row">
+                    <iframe class="col-lg-6 mt-2" width="100%" height="315px" src="https://www.youtube.com/embed/gvV8h5VLOt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="col-lg-6 mt-2" width="100%" height="315px" src="https://www.youtube.com/embed/rkM4JpN2W_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+            <br><br>
+          <h2>Leia Mais ></h2>
+          <div  class="container">
+              <div class="row">
+                  <img src="assets\Range-Rover-Sport-2023 (4).jpg" alt="Foto, carro, Range Rover Sport 2022" class="col-4 mt-3 foto-noticia">
+                    <h3 class="col-7 mt-3 titulo-noticia">Range Rover Sport 2023 é apresentado com versão PHEV
+                        <br><p class="texto-noticia mt-3">A terceira geração do Range Rover Sport foi apresentado oficialmente, 
+                            agora com motores de no mínimo 6 cilindros e versão Plug-In Híbrida.
+                        </p>
+                    </h3>
+                    <img src="assets\BMW-Serie-3-X1.jpg" alt="Foto, Carro BMW Series 3 x1" class="col-4 mt-3 foto-noticia">
+                    <h3 class="col-7 mt-3 titulo-noticia">BMW 320i tem taxa abaixo de 1% no Plano Sign & Go; X1 tem taxa zero - maio
+                        <br><p class="texto-noticia mt-3"><span>A BMW do Brasil anunciou taxas de juros diferenciadas para os modelos BMW 320i e BMW X1, 
+                            no mês de maio de 2022, adquiridos no Plano Sign & Go.</span>
+                        </p>
+                    </h3>
+                    <img src="assets\bmw_m760e_xdrive_81.jpg" alt="Foto, Carro BMW m760e xdrive 81 " class="col-4 mt-3 foto-noticia">
+                    <h3 class="col-7 mt-3 titulo-noticia">BMW Série 7 terá versões eletrificadas M760e e M70 topo em 2023
+                        <br><p class="texto-noticia mt-3"><span>A BMW apresentou esta semana o BMW Série 7 2023, redesenhado, o qual estará à venda no final 
+                          deste ano na Europa, EUA e China, mas nem todas as versões estarão disponíveis no lançamento 
+                          do mercado.</span>
+                        </p>
+                    </h3>
+                    <img src="assets\Novo-BMW-X1-2023.jpg" alt="Foto, Carro BMW X1 2023" class="col-4 mt-3 foto-noticia">
+                    <h3 class="col-7 mt-3 titulo-noticia">Novos BMW X1 e iX1 elétrico 2023 têm imagens e detalhes revelados
+                        <br><p class="texto-noticia mt-3"><span>A BMW iniciou a contagem regressiva para o lançamento 
+                          da terceira geração de modelos do BMW X1 – o qual terá uma versão totalmente elétrica, o BMW iX1.</span>
+                        </p>
+                    </h3>
+                    <img src="assets\BMW-i7-xDrive-203.jpg" alt="Foto, Carro BMW i7 xDrive" class="col-4 mt-3 foto-noticia">
+                    <h3 class="col-7 mt-3 titulo-noticia">Novo BMW Série 7 2023 ganha versão elétrica i7
+                        <br><p class="texto-noticia mt-3"><span>A BMW apresentou a linha 2023 do BMW Série 7, com 
+                          reformulação estética, mais potência no motor V8 e uma versão totalmente elétrica i7.</span>
+                        </p>
+                    </h3>
+              </div>
+
+          </div>
+
+    </main>
+
+    <footer class="row py-5 my-5 border-top">
+        <div class="col">      
+        </div>
+
+        <div class="col-md-2 col-sm-12">
+            <img src="assets\logo.png" class="logo-footer" alt="Logo carrotech">
+            <p class="text-muted">Todos os direitos reservados ©2022</p>
+        </div>
+    
+        <div class="col-md-2 col-sm-4">
+          <h5>Carrotech</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-muted">Sobre</a></li>
+            <li class="nav-item mb-2"><a href="faleconosco.html" class="nav-link p-0 text-muted">Fale Conosco</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-md-2 col-sm-4">
+          <h5>Redes Sociais</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://twitter.com/" class="nav-link p-0 text-muted"><img src="assets\twitter-icon.png" class="icon m-1" alt="Ícone twitter">Twitter</a></li>
+            <li class="nav-item mb-2"><a href="https://facebook.com/" class="nav-link p-0 text-muted"><img src="assets\facebook-icon.png" class="icon m-1" alt="Ícone facebook">Facebook</a></li>
+            <li class="nav-item mb-2"><a href="https://youtube.com/" class="nav-link p-0 text-muted"><img src="assets\youtube-icon.png" class="icon m-1" alt="Ícone Youtube">Youtube</a></li>
+            <li class="nav-item mb-2"><a href="https://Instagram.com/" class="nav-link p-0 text-muted"><img src="assets\Insta-icone.png" class="icon m-1" alt="Ícone Instagram">Instagram</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-md-2 col-sm-4">
+          <h5>Parceiros</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="http://serratec.org/" class="nav-link p-0 text-muted"><img src="assets\serratec-icon.jpg" class="icon m-1" alt="Ícone serratec">Serratec</a></li>
+            <li class="nav-item mb-2"><a href="https://www.tesla.com/" class="nav-link p-0 text-muted"><img src="assets\tesla-icon.png" class="icon m-1" alt="Ícone tesla">Tesla</a></li>
+            <li class="nav-item mb-2"><a href="https://www.nasa.gov/" class="nav-link p-0 text-muted"><img src="assets\nasa-icon.png" class="icon m-1" alt="Ícone NASA">NASA</a></li>
+            <li class="nav-item mb-2"><a href="https://www.bmw.com.br/pt/index.html" class="nav-link p-0 text-muted"><img src="assets\bmw-icon.png" class="icon m-1" alt="Ícone BMW">BMW</a></li>
+          </ul>
+        </div>
+
+        <div class="col-1">
+            
+        </div>
+
+        <div class="col-1">
+        </div>
+    </footer>
+    
+</body>
+</html>

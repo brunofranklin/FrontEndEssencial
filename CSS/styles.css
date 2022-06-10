@@ -1,0 +1,267 @@
+body{
+    background-color: rgb(240, 240, 240);
+    overflow-x: hidden;
+}
+
+main{
+    background-color: rgb(231, 231, 231);
+}
+
+
+/* CSS DARKMODE */
+.dark-mode-all{
+    background-color: rgb(46, 46, 46);
+    color: azure;
+}
+
+.dark-mode-main{
+    background-color: rgb(71, 71, 71);
+    color: azure;
+}
+
+.dark-mode-footer{
+    background-color: rgb(209, 209, 209);
+    color: rgb(43, 43, 43);
+}
+
+.dark-mode-nav{
+    background-color: rgb(209, 209, 209);
+    color: rgb(43, 43, 43);
+}
+
+
+/* CSS BUTTONS */
+.btn-darkMode{
+    background-color: #303030;
+    border-radius: 50px;
+    margin-right: 25px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.btn-darkMode:hover{
+    transition: 0.25s;
+    background-color: #303030;
+    border-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.btn-darkMode:focus{
+    background-color: #303030;
+    border-color: none;
+}
+
+
+/* CSS NAVBAR/HEADER */
+header{
+    background-color: rgb(211, 211, 211);
+}
+
+#txtUser{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: rgb(164, 164, 164);
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* CSS FOOTER */
+.footer{
+    background-color: rgb(183, 183, 183);
+}
+
+footer{
+    background-color: rgb(217, 217, 217);
+}
+
+
+/* ESTILO DE TEXTOS */
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textNav{
+    color: rgb(123, 123, 123);
+}
+
+.textNav:hover{
+    color: rgb(64, 64, 64);
+}
+
+.span-dark{
+    color: aliceblue;
+}
+
+.textHeader{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    border-right: 1px solid rgb(135, 135, 135);
+    font-size: large;
+}
+
+.textFale{
+    border-right: none;
+}
+
+.textLogin{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    font-size: large;
+    color: rgb(255, 115, 0);
+    margin-right: 30px;
+}
+
+.textLogin:hover{
+    color: rgb(185, 147, 72);
+}
+
+.texto-noticia{
+    font-size:large;
+    font-style: normal;
+}
+
+
+/* CSS FOTOS E ICONES */
+.icon-nav-toggler{
+
+    height:30px;
+    width:30px;
+
+}
+
+.icon-dark{
+    height: 25px;
+    width: 25px;
+}
+
+.foto-noticia{
+    width: 300px;
+    height: 200px;
+}
+
+.logo-footer{
+    width: 90%;
+    height: 30%;
+}
+
+.logo-header{
+    width: auto;
+    height: 50px;
+}
+
+.icon{
+    height: 20px;
+    height: 20px;
+}
+
+
+/* CSS LOGIN */
+#form-container{
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0.5px 10px 15px rgb(0 0 0 /25%);
+    margin: 25px auto;
+    padding: 35px;
+}
+#form-container{
+    color:#222;
+    transition: 2s;
+}
+#form-conateiner a:hover{
+    color: rgb(231, 231, 231);
+}
+
+.btn.btn-primary{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgb(238, 112, 10);
+}
+
+.btn.btn-primary:hover{
+    background-color: rgb(251, 142, 53);
+    border-radius: 7px;
+    transition: 0.5s;
+    
+}
+
+#pass{
+    box-shadow: 0.5px 10px 15px rgba(0,0,0,0.2);
+}
+
+#email{
+    box-shadow: 0.5px 10px 15px rgba(0,0,0,0.2);
+}
+
+
+.btn.btn-primary:hfocus{
+    border-color: #222;
+}
+
+#form-container .form-control{
+    border: none;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    border-radius: 0;
+}
+#form-container .form-control:focus{
+    box-shadow: none;
+}
+
+.form-floating label{
+    color: #bbb;
+}
+
+/* MEDIAS */
+
+@media(min-width:768px){
+    #link-container{
+        text-align: left;
+    }
+    .btn.btn-primary{
+        margin-bottom: 30px;
+    }
+
+    .logo-footer{
+        width: 100%;
+        height: 15%;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo-footer{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media(min-width:1400px){
+
+    .logo-footer{
+        width: 90%;
+        height: 40%;
+    }
+
+}
+
+@media(min-width:1024px){
+
+    .logo-footer{
+        width: 90%;
+        height: 25%;
+    }
+
+}
